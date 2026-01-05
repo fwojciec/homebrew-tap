@@ -5,21 +5,21 @@
 class J4c < Formula
   desc "Non-interactive Jira CLI for AI agents"
   homepage "https://github.com/fwojciec/jira4claude"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fwojciec/jira4claude/releases/download/v0.1.0/jira4claude_Darwin_x86_64.tar.gz"
-      sha256 "0f2a57e2f899b052308dd643464df766350ef284acc341ef39ed838a64d2025a"
+      url "https://github.com/fwojciec/jira4claude/releases/download/v0.2.0/jira4claude_Darwin_x86_64.tar.gz"
+      sha256 "36be8d544475e30fd878951243a7447f4e178cce3a582bd6a76cffe9fae2e1f6"
 
       def install
         bin.install "j4c"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fwojciec/jira4claude/releases/download/v0.1.0/jira4claude_Darwin_arm64.tar.gz"
-      sha256 "f398c568f69656816b0c086c47b02f96d5919c1c8753ea884f295da270a0e759"
+      url "https://github.com/fwojciec/jira4claude/releases/download/v0.2.0/jira4claude_Darwin_arm64.tar.gz"
+      sha256 "20b0bd06055a995831d610030510df81cea3205cef489c3244a9710e62b8b7db"
 
       def install
         bin.install "j4c"
@@ -29,15 +29,15 @@ class J4c < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fwojciec/jira4claude/releases/download/v0.1.0/jira4claude_Linux_x86_64.tar.gz"
-      sha256 "81fc193ba0a9e135d33239ba5f8d819f0372f00eddd7c64284d52652ebfa1736"
+      url "https://github.com/fwojciec/jira4claude/releases/download/v0.2.0/jira4claude_Linux_x86_64.tar.gz"
+      sha256 "bbafd495b63d9d4cdacc719b2206592bac97db7683d55783bfc7e2ccf4ef507b"
       def install
         bin.install "j4c"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fwojciec/jira4claude/releases/download/v0.1.0/jira4claude_Linux_arm64.tar.gz"
-      sha256 "ee15dbd9edf5c0f90680865a656bac2826d98c2e8a8e0758208a8bdaa0d011f6"
+      url "https://github.com/fwojciec/jira4claude/releases/download/v0.2.0/jira4claude_Linux_arm64.tar.gz"
+      sha256 "3fd8bdbfbad0fee802c618deac0bfd3ff88c98fa721738bec0a49c199dd64b84"
       def install
         bin.install "j4c"
       end
